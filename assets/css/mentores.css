@@ -1,0 +1,144 @@
+@font-face{
+    font-family:poppins-black;
+    src: url('../fonts/Poppins/Poppins-Black.ttf');
+}
+@font-face {
+    font-family:poppins-ligth;
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins-ligth';
+}
+
+.frase-mentores {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 5%;
+    font-family: 'poppins-black';
+    color: #F55820;
+}
+
+.container-geral {
+    padding-left: 2.5%;
+}
+.container-filtro-mentores {
+    text-align: center;
+}
+
+.container-label {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container-label li {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.filtro-input-name, .filtro-input-select {
+    display: inline-block;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+.filtro-input-name {
+    font-size: 15px;
+    font-family: 'poppins-black';
+    font-weight: bold;
+    /* color: #F55820; */
+    display: inline-block;
+    padding: 5px;
+}
+
+.filtro-input-select {
+    font-size: 13px;
+    background-color: #D9D7F5;
+    border-radius: 5px;
+    border-color: #D9D7F5;
+    border-width: 2px;
+}
+
+.buscar-button {
+    background-color: #F55820;
+    /* background-color: #04A777; */
+    color: white;
+    padding: 5px;
+    margin: 20px 5px;
+    width: 100%;
+}
+
+.container-mentores {
+    /* background-color: #EBDC58; */
+    padding: 10px;
+}
+
+.container-mentor {
+    background-color: #D9D7F5;
+    padding: 10px;
+    margin: 10px;
+}
+
+.mentor-foto img {
+    border-radius: 50%;
+    max-width: 100%;
+    padding: 10px 0;
+}
+
+.mentor-textos {
+    padding: 10px 0;
+    text-align: left;
+}
+
+.mentor-textos h2, h3 {
+    font-size: 20px;
+    font-family: 'poppins-black';
+    padding: 5px 10px;
+}
+
+.mentor-textos p {
+    font-size: 15px;
+    padding: 15px;
+}
+
+.container-button-mentor a {
+    display: inline-block;
+    text-align: right;
+}
+
+.container-button-mentor button {
+    background-color: #04A777;
+    color: white;
+    margin-top: 10px;
+    margin: 5px 10px;
+}
+
+
+@media (max-width: 992px) {
+    .filtro-input-select {
+        width: 50%;
+    }
+
+    .buscar-button {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .filtro-input-select {
+        width: 100%;
+    }
+
+    .buscar-button {
+        width: 100%;
+    }
+}
+
