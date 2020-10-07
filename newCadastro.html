@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleCadastros.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cadastro Mentorastic</title>
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div class="logo">
+               <a href="/index.html"> Mentorastic.</a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="">Mentores</a></li>
+                        <li><a href="">Conecte-se</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="buttonCadastro">
+                <button><a href="">Cadastre-se</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="conteiner-left">
+            <div class="cadastro-container">
+                <div class="img-container">
+                    <img src="/assets/images/user-cadastro1.jpg" alt="">
+                </div>
+
+                <div class="container-right">
+                    <div class="form-title">
+                        <h1> Cadastre-se </h1>
+                    </div>
+                
+                    <form action="" method="POST">
+                        <p> 
+                            <label for="Nome">Nome:</label>
+                            <input type="text" name="name" id="email" autofocus required  placeholder="Digite seu nome">
+                        </p> 
+                        <p> 
+                            <label for="email">E-mail:</label>
+                            <input type="text" name="email" id="email" autofocus required  placeholder="Digite seu E-mail">
+                        </p> 
+                        <p> 
+                            <label for="Telefone">Telefone:</label>
+                            <input type="text" name="telefone"  placeholder="Digite seu telefone">
+                        </p> 
+                        
+                        <p>
+                            <label for="password">Senha:</label>
+                            <input type="password" name="password" id="password" required placeholder="Digite sua senha">
+                        </p>
+                        <p class="select">
+                            <label  for="perfil">Selecione seu perfil:</label>
+                            <select class="sele" name="perfil" id="perfil">
+                                <option value="SelecionarPerfil"></option>
+                                <option value="Mentor">Mentor</option>
+                                <option value="Mentorado">Mentorado</option>
+                            </select>
+                        </p>
+
+
+                        <!--<p>
+                            <label > <input type="submit" value="Cadastrar"/></label>
+                           
+
+                        </p>-->
+                        <button class="buttonCadastrar" type="submit">cadastro</button>
+                    </form>
+
+                <div class="Login">
+                    <span>Já é cadastrado? <a href="">Faça seu login</a></span> 
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>  
+
+</body>
+</html>
