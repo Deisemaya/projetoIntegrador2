@@ -1,0 +1,427 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face{
+    font-family:poppins-black;
+    src: url('../fonts/Poppins-Black.ttf');
+}
+@font-face {
+    font-family:poppins-ligth;
+    src: url('../fonts/Poppins-Light.ttf');
+}
+   
+#container-header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    background-color: #8D07F6;
+}
+#container-header a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+    display:flex;
+    align-items: center;
+    padding-left: 137px;
+    font-family: poppins-black;
+}
+.menu{
+    display:flex;
+    align-items: center;
+    padding-right: 20%;
+}
+nav ul,
+nav li {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+nav ul{
+    display: flex;  
+}
+nav a{
+    display: block;
+    padding:8px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'poppins-black';
+}
+nav li:hover{
+    background-color: #04A777;
+    border-radius: 5px;
+}
+.buttonCadastro{
+    padding-right: 137px;
+    display:flex;
+    align-items: center;
+    padding-right: 80px;
+}
+.buttonCadastro button{
+    background-color: #04A777;
+    color: #fff;
+    font-family: "poppins-black";
+    border: none;
+    border-radius: 3px;
+}
+.buttonCadastro button:hover{
+    background-color:#f55820;
+}
+
+#banner{
+    background-color: #8D07F6;
+    background-image: url('../images/ilustracao.png');
+    background-size: 520px;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: 90%;
+    width: 100;
+    height: 650px;
+    padding-top:1px;
+}
+.banner-container h1{
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 137px;
+    font-family: 'poppins-black';
+    font-size: 41px;
+}
+.banner-container p{
+    color: #fff;
+    font-family: 'poppins-ligth';
+    padding-left: 137px;
+    font-size: 23px;
+}
+
+#section{
+    padding-top: 50px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.title-main{
+    font-family: 'poppins-black';
+    color: #32264D;
+    text-align: center;
+    padding-top: 200px;
+}
+#section a{
+    text-decoration: none;
+}
+.section-container{
+    background-color: #D4DBF5;
+    margin:10px;
+    border-radius: 15px;
+    height: 300px;
+    width:350px;
+    font-size: 14px;   
+    padding-top: 110px;
+    position: relative;
+}
+
+.section-container:hover{
+    background-color: #CED6F3;
+}
+.section-container span{
+    font-family: 'poppins-black';
+    color: #32264D;
+}
+.section-container p{
+    font-family: 'poppins-ligth';
+    color: #32264D;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.section-img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 60%;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#banner2{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-left: 137px;
+    background-color: #2DB6C3;
+    height: 250px;
+    background-image: url('../images/ilustracao2.png');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+.banner2-container h3{
+    color: #32264D;
+    font-family: 'poppins-black';
+}
+.banner2-container span{
+    color: #32264D;
+    font-size: 23px; 
+    font-family:'poppins-ligth';
+}
+#info h2{
+    margin-top: 200px;
+    margin-left: 137px;
+    color: #32264D;
+    font-family: 'poppins-black';
+}
+.info-container{
+    display:flex;
+    margin-top: 150px;
+    margin-left: 137px;
+}
+.infoMid-container{
+    display:flex;
+    justify-content:flex-end;
+    margin-top: 100px;
+    margin-right: 137px;
+}
+.resume-container,
+.resumeMid-container{ 
+    height: 151px;
+    width: 373px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'poppins-light';
+    color: #32264D;
+}
+
+@font-face {
+    font-family:mont;
+    src: url('../fonts/Montserrat-Regular.ttf')
+}
+
+.footer-subtittle-1 a {
+    font-family: 'mont';
+    font-size: 10px;
+    color: black;
+}
+
+.footer-subtittle-1 a:hover {
+    color: rgb(185, 0, 185);
+}
+
+.footer-subtittle-2 {
+    font-family:'mont';
+    font-size: 10px;
+    color: black;
+}
+
+.container-intens-1 {
+    margin-top: 30px;
+}
+.container-itens-3 {
+    display:flex;
+    margin-top: 40px;  
+}
+.container-itens-3 li{
+    font-size: 12px;
+    font-family: 'mont';
+}
+.img { 
+    width: 20px;
+    height: 20px;
+}
+
+
+@media (max-width:1200px) {
+    .logo{
+        padding-left: 100px;
+    }
+    .buttonCadastro{
+        padding-right: 100px;
+    }
+    .banner-container h1{
+        font-size: 35px;
+    }
+    .banner-container p{
+        font-size: 18px;
+    }
+    #banner{
+        background-size: 400px;
+        height: 490px;
+    }
+    #banner2 h3{
+        font-size: 18px;
+    }
+    #banner2 span{
+        font-size: 14px;
+    }
+    #banner2{
+        background-size: 450px 250px;
+    }
+}
+@media (max-width:1000px) {
+    #container-header{
+        background-image: url('../images/menu\ 1.png');
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 50%;
+    }
+    #container-header .menu, .buttonCadastro{
+        display:none;
+    } 
+    #container-header .logo{
+        padding-left: 50px;
+    }
+
+    #banner h1{
+        padding-top: 20px;
+        padding-left: 50px;
+        font-size: 24px;
+    }
+    #banner p{
+        padding-left: 50px;
+        font-size: 13px;
+    }
+    #banner{
+        background-size: 280px 250px;
+        height: 350px;
+    }
+    #banner2 h3{
+        font-size: 20px;
+    }
+    #banner2 span{
+        font-size: 20px;
+    }
+    #banner2{
+        background-image: none;
+    }
+
+    #info h2 {
+        font-size: 20px;
+        margin-left:50px;
+    }
+    .info-container{
+        margin-left: 50px;
+    }
+    .infoMid-container{
+        margin-right: 50px;
+    }
+    .resume-container p, 
+    .resumeMid-container p{
+        font-size: 15px;
+    }
+    .info-container img,
+    .infoMid-container img{
+        width: 250px;
+    }
+}
+
+
+@media(max-width: 580px){
+        #container-header .logo{
+            padding-left:20px;
+            font-size: 24px;
+        }
+        #banner h1{
+            padding-left: 20px;
+            font-size: 14px;
+            width: 150px;
+        }
+        #banner p{
+            font-size: 10px;
+            padding-left: 20px;
+            width:150px;
+        }
+        #banner{
+            background-size: 200px 150px;
+            height: 200px;
+        }
+        #banner2{  
+            padding-left: 10px;   
+            padding-top: 5px;
+        }
+        #info h2 {
+            margin-top: 150px;
+        }
+        .info-container img,
+        .infoMid-container img{
+            height:100px;
+            width: 150px;
+        }
+        .infoMid-container{
+            margin-right: 20px;
+            margin-top: 151px;           
+        }
+        .resume-container p,
+        .resumeMid-container p{
+            font-size: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }  
+}
+@media (max-width:370px){
+    .title-main{
+        font-size: 20px;
+        padding-top:  100px;
+    }
+    #banner{
+        background-size: 140px;
+    }
+    #banner2 h3{
+        font-size: 18px;
+    }
+    #banner2 span{
+        font-size: 14px;
+    }
+    #info h2 {
+        font-size:20px;
+        margin-left: 10px;
+    }
+    .info-container{
+        margin-top: 100px;
+    }
+}
