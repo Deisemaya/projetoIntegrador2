@@ -17,9 +17,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/home', IndexRouter);
+//as rotas eram rotas filhas, eu teria que escrever http://localhost:333/home/home
+//era só mudar a home para '/' e as outras deixei como rotas filhas mesmo
+app.use('/', IndexRouter);
 app.use('/agenda', IndexRouter);
-app.use('mentores', IndexRouter);
+app.use('/mentores', IndexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
