@@ -22,6 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', IndexRouter);
 app.use('/agenda', IndexRouter);
 app.use('/mentores', IndexRouter);
+app.use('/login', IndexRouter);
+app.use('/cadastro', IndexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

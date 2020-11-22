@@ -9,7 +9,17 @@ const AuthController = {
     },
     showMentores: (req, res) => {
         res.render('mentores');
+    },
+    showLogin:(req, res)=>{
+        res.render('login');
+
+    },
+    showCadastro:(req, res) => {
+        res.render('cadastro')
     }
+
+    
+
 };
 
 module.exports = AuthController;
