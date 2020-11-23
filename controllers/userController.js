@@ -36,7 +36,10 @@ const Users ={
           res.render("editar-perfil",{usuario}) 
       },
   
-      delete: ()=>{},
+      delete: (req, res)=>{
+          const idParam = req.params.id
+          //busca do usuario no DB
+        },
       login:(req, res)=>{
           let{email, senha} = req.body;
           //busca do usuario no DB
