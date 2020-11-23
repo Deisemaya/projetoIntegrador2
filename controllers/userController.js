@@ -19,10 +19,7 @@ const Users ={
           })
           res.redirect('/')
       },
-      showLogin:(req, res)=>{
-          res.render('login');
-  
-      },
+      
       editById: (req, res)=>{
           let id= req.params.id;
           // procurando no DB
@@ -52,7 +49,11 @@ const Users ={
 
           })*/
         },
-      login:(req, res)=>{
+        login:(req, res)=>{
+            res.render('login')
+
+        },
+        index:(req, res)=>{
           let{email, senha} = req.body;
           //busca do usuario no DB
           let user = usuarios.find(
@@ -60,7 +61,7 @@ const Users ={
           
           );
           if(user){req.session.user = user
-          return res.redirect ("/perfil")
+          return res.redirect ("perfil")
          }else{
              return res.redirect("login");
          }
