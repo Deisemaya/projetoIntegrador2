@@ -1,5 +1,6 @@
 const express = require('express');
-const usuarios = []
+const nodemon = require('nodemon');
+
 
 const AuthController = {
     showHome: (req, res) => {
@@ -41,13 +42,17 @@ const Users ={
     editById: (req, res)=>{
         let id= req.params.id;
         // procurando no DB
-        let Usuario = usuarios.find((usuario) =>{return usuario.id == id} )
+        let usuario = usuarios.find((usuario) =>{return usuario.id == id} )
         res.render("editar-perfil",{usuario}) 
 
     },
     editByName:(req, res)=>{
-        let byName = req.params.nome
+        let nome = req.params.nome
+        let usuario = usuarios.find((usuario) =>{return usuario.nome == nodemon} )
+        res.render("editar-perfil",{usuario}) 
     },
+
+    delete: ()=>{},
     login:(req, res)=>{
         let{email, senha} = req.body;
         //busca do usuario no DB
