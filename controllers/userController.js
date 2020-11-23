@@ -1,13 +1,13 @@
-const fs = require("fs");
+//const fs = require("fs");
 const path = require('path');
 const usuarios = []
 const Users ={
 
-    create:(req, res) => {
+    show:(req, res) => {
           res.render('cadastro')
       },
   
-      store:(req, res)=> {
+      create:(req, res)=> {
           let {nome, email, senha} = req.body;
   
           //Adicionando usuario ainda sem conexao com o DB
@@ -15,7 +15,7 @@ const Users ={
               nome:nome,
               email: email,
               telefone:tefone,
-              senha:password
+              senha:senha
           })
           res.redirect('/')
       },
@@ -38,7 +38,19 @@ const Users ={
   
       delete: (req, res)=>{
           const idParam = req.params.id
-          //busca do usuario no DB
+          //busca do usuario no DB seria necessario implementar verificacao com senha antes de deletar
+          /*usuario.findByIdAndDelete(idParam, (error, usuario )=>{
+              if(error){
+                  return res.status(500).send(error)
+              }else{
+                  if(usuario){
+                      return res.status(200).send("Usuario apagado")
+                  }else{
+                      res.StatusSend(404)
+                  }
+              }
+
+          })*/
         },
       login:(req, res)=>{
           let{email, senha} = req.body;
