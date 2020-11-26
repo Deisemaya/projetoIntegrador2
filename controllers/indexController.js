@@ -1,8 +1,8 @@
 const express = require('express');
-const nodemon = require('nodemon');
 
 
-const AuthController = {
+
+const indexController = {
     showHome: (req, res) => {
         res.render('home');
     },
@@ -22,4 +22,4 @@ const AuthController = {
 
 
 
-module.exports = AuthController;
+module.exports = indexController;

@@ -49,11 +49,11 @@ const Users ={
 
           })*/
         },
-        login:(req, res)=>{
+        showlogin:(req, res)=>{
             res.render('login')
 
         },
-        index:(req, res)=>{
+        login:(req, res)=>{
           let{email, senha} = req.body;
           //busca do usuario no DB
           let user = usuarios.find(

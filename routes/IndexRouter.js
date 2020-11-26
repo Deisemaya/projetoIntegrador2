@@ -1,12 +1,12 @@
 const express = require('express');
 const Router = express.Router();
-const AuthController = require('../controllers/AuthController');
+const indexController = require('../controllers/indexController');
 
 //as rotas eram rotas filhas, eu teria que escrever http://localhost:333/home/home
 //era só mudar a home para '/' e as outras deixei como rotas filhas mesmo
-Router.get('/', AuthController.showHome);
-Router.get('/agenda', AuthController.showAgenda);
-Router.get('/mentores', AuthController.showMentores);
+Router.get('/', indexController.showHome);
+Router.get('/agenda', indexController.showAgenda);
+Router.get('/mentores', indexController.showMentores);
 
 
 module.exports = Router;

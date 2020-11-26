@@ -6,8 +6,10 @@ const usercontroller = require('../controllers/userController');
 
 Router.get('/cadastro',usercontroller.show);
 Router.post('/cadastro', usercontroller.create)
-Router.get('/login', usercontroller.login);
-Router.get('/login',usercontroller.index)
+Router.post('/login', usercontroller.login);
+Router.get('/login',usercontroller.showlogin)
+
+
 /*
 Router.get('/perfil/:edit, usercontroller.editById)
 
