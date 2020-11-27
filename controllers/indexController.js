@@ -1,7 +1,5 @@
 const express = require('express');
 
-
-
 const indexController = {
     showHome: (req, res) => {
         res.render('home');
@@ -12,10 +10,6 @@ const indexController = {
     showMentores: (req, res) => {
         res.render('mentores');
     },
-    
-    
-    
-
 };
 
 
