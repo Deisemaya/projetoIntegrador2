@@ -1,16 +1,12 @@
 var express = require('express');
 var Router = express.Router();
 
-const usercontroller = require('../controllers/userController');
+const userController = require('../controllers/userController');
 
-Router.get('/cadastro',usercontroller.show);
-Router.post('/cadastro', usercontroller.create)
-Router.post('/login', usercontroller.login);
-Router.get('/login',usercontroller.showlogin)
-
-/*
-Router.get('/perfil/:edit, usercontroller.editById)
-
- */
+Router.get('/cadastro', userController.show);
+Router.post('/cadastro', userController.create)
+Router.post('/login', userController.login);
+Router.get('/login', userController.showLogin);
+Router.get('/cadastro-mentor', userController.showCadastroMentor);
 
 module.exports = Router;

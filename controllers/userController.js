@@ -1,10 +1,14 @@
+const express = require('express');
 const path = require('path');
+
 const usuarios = []
+
 const Users = {
         show:(req, res) => {
           res.render('cadastro')
       },
-        create: (req, res) => {
+        
+      create: (req, res) => {
           let {nome, email, senha} = req.body;
           usuarios.push = ({
               nome:nome,
@@ -14,17 +18,20 @@ const Users = {
           });
           res.redirect('/');
       },      
-        editById: (req, res) => {
+        
+      editById: (req, res) => {
           let id= req.params.id;
           let usuario = usuarios.find((usuario) => {return usuario.id == id});
-          res.render("editar-perfil", {usuario}); 
+          res.render('editar-perfil', {usuario}); 
       },
-        editByName:(req, res) => {
+        
+      editByName:(req, res) => {
           let nome = req.params.nome
           let usuario = usuarios.find((usuario) => {return usuario.nome == nodemon});
-          res.render("editar-perfil", {usuario}) 
+          res.render('editar-perfil', {usuario}) 
       },
-        delete: (req, res)=>{
+        
+      delete: (req, res)=> {
           const idParam = req.params.id
           /*usuario.findByIdAndDelete(idParam, (error, usuario) => {
               if(error) {
@@ -38,19 +45,25 @@ const Users = {
               }
           })*/
         },
-        showlogin:(req, res) => {
+        
+        showLogin:(req, res) => {
             res.render('login');
         },
+        
         login:(req, res) => {
           let{email, senha} = req.body;
           let user = usuarios.find(
               user => (user.email == email && user.senha == senha)
           );
           if (user) {req.session.user = user
-          return res.redirect ("perfil");
+          return res.redirect ('perfil');
          } else {
-             return res.redirect("login");
+             return res.redirect('login');
          }
+      },
+      
+      showCadastroMentor: (req, res) => {
+        res.render('cadastro-mentor')
       }
   }
   

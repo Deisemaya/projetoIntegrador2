@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const IndexRouter = require('./routes/IndexRouter');
-const userRouter = require('./routes/userRouter')
+const userRouter = require('./routes/userRouter');
 var app = express();
 
 // view engine setup
@@ -18,12 +18,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//as rotas eram rotas filhas, eu teria que escrever http://localhost:333/home/home
-//era só mudar a home para '/' e as outras deixei como rotas filhas mesmo
 app.use('/', IndexRouter);
-//app.use('/agenda', IndexRouter);
-//app.use('/mentores', IndexRouter);
-app.use('/',userRouter );
+app.use('/', userRouter);
+app.use('/cadastro-mentor', userRouter);
 
 
 // catch 404 and forward to error handler
