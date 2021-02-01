@@ -42,60 +42,65 @@
                 
                     <form action="" method="POST">
                         <p> 
-                            <label for="Nome">Nome:</label>
-                            <input type="text" name="name" id="email" autofocus required  placeholder="Digite seu nome">
+                            <label for="Nome">Nome completo:</label>
+                            <input type="text" name="name" id="label" autofocus required  placeholder="Digite seu nome">
                         </p> 
                         <p> 
                             <label for="email">E-mail:</label>
-                            <input type="text" name="email" id="email" autofocus required  placeholder="Digite seu E-mail">
+                            <input type="text" name="email" id="label" autofocus required  placeholder="Digite seu E-mail">
                         </p> 
                         
                         <p>
-                            <label for="password">Senha:</label>
-                            <input type="password" name="password" id="password" required placeholder="Digite sua senha">
+                            <label for="password">Escolha uma senha:</label>
+                            <input type="password" name="password" id="label" required placeholder="Digite sua senha">
+                        </p>
+
+                        <p>
+                            <label for="password">Confirme sua senha:</label>
+                            <input type="password" name="password" id="label" required placeholder="Digite sua senha">
                         </p>
 
                         <p class="select">
-                            <label  for="perfil">Selecione o(s) horário(s):</label>
-                            <select class="sele" name="perfil" id="perfil">
-                                <option value="SelecionarPerfil"></option>
-                                <option value="Mentor">08h00</option>
-                                <option value="Mentorado">09h00</option>
-                                <option value="Mentorado">10h00</option>
-                                <option value="Mentorado">11h00</option>
-                                <option value="Mentorado">12h00</option>
-                                <option value="Mentorado">13h00</option>
-                                <option value="Mentorado">14h00</option>
-                                <option value="Mentorado">15h00</option>
-                                <option value="Mentorado">16h00</option>
-                                <option value="Mentorado">17h00</option>
-                                <option value="Mentorado">18h00</option>
-                                <option value="Mentorado">19h00</option>
-                                <option value="Mentorado">20h00</option>
-                                <option value="Mentorado">21h00</option>
+                            <label class="sele" for="perfil">Áreas:</label>
+                            <select class="option-label" name="option">
+                                <option value="horario">Selecionar</option>
+                                <option value="area">Programação Full Stack</option>
+                                <option value="area">Mobile Development</option>
+                                <option value="area">Web Design</option>
+                                <option value="area">Data Analytics & Data Science</option>
+                                <option value="area">Gerenciamento de projetos TI</option>
+                                <option value="area">Clound Computing</option>
                             </select>
                         </p>
                         <p class="select">
-                            <label  for="perfil">Selecione o(s) dia(s) da semana:</label>
-                            <select class="sele" name="perfil" id="perfil">
-                                <option value="SelecionarPerfil"></option>
-                                <option value="Mentor">Segunda-feira</option>
-                                <option value="Mentorado">Terça-feira</option>
-                                <option value="Mentorado">Quarta-feira</option>
-                                <option value="Mentorado">Quinta-feira</option>
-                                <option value="Mentorado">Sexta-feira</option>
+                            <label class="sele" for="perfil">Horários:</label>
+                            <select class="option-label" name="option">
+                                <option value="dia">Selecionar</option>
+                                <option value="horario">08h00</option>
+                                <option value="horario">09h00</option>
+                                <option value="horario">10h00</option>
+                                <option value="horario">11h00</option>
+                                <option value="horario">12h00</option>
+                                <option value="horario">13h00</option>
+                                <option value="horario">14h00</option>
+                                <option value="horario">15h00</option>
+                                <option value="horario">16h00</option>
+                                <option value="horario">17h00</option>
+                                <option value="horario">18h00</option>
+                                <option value="horario">19h00</option>
+                                <option value="horario">20h00</option>
+                                <option value="horario">21h00</option>
                             </select>
                         </p>
                         <p class="select">
-                            <label  for="perfil">Selecione sua área:</label>
-                            <select class="sele" name="perfil" id="perfil">
-                                <option value="SelecionarPerfil"></option>
-                                <option value="Mentor">Programação Full Stack</option>
-                                <option value="Mentorado">Mobile Development</option>
-                                <option value="Mentorado">Web Design</option>
-                                <option value="Mentorado">Data Analytics & Data Science</option>
-                                <option value="Mentorado">Gerenciamento de projetos TI</option>
-                                <option value="Mentorado">Clound Computing</option>
+                            <label class="sele" for="perfil">Dias da semana:</label>
+                            <select class="option-label" name="option">
+                                <option value="area">Selecionar</option>
+                                <option value="dia">Segunda-feira</option>
+                                <option value="dia">Terça-feira</option>
+                                <option value="dia">Quarta-feira</option>
+                                <option value="dia">Quinta-feira</option>
+                                <option value="dia">Sexta-feira</option>
                             </select>
                         </p>
 
@@ -104,7 +109,7 @@
                            
 
                         </p>-->
-                        <button class="buttonCadastrar" type="submit">cadastro</button>
+                        <button class="buttonCadastrar" type="submit">Cadastrar</button>
                     </form>
 
                 <div class="Login">

@@ -1,4 +1,4 @@
-@keyframes bounce{
+@keyframes bounce {
     0%, 20%, 60%, 100%{
         -webkit-transform:translateY(0);
         transform:translate(0);
@@ -21,10 +21,10 @@
     font-family:montserrat-medium;
     src: url('../fonts/Montserrat-Medium.ttf')
 }
-.login-container{
+.login-container {
     display:flex;
 }
-.img-container img{
+.img-container img {
     padding-top: 80px;
     margin-left:10px;
     height: 400px;
@@ -34,18 +34,18 @@
     padding-left: 100px;
     padding-top: 80px;
 }
-.form-title{
+.form-title {
     font-size: 41px;
     margin-bottom: 50px;
     color: #32264D;
     font-family: 'montserrat-medium';
 }
-.form-container label{
+.form-container label {
     color: #32264D;
     font-family: 'poppins-ligth';
     padding-bottom: 5px;
 }
-.form-container input{
+.form-container input {
     display:flex;
     width: 500px;
     height: 25px;
@@ -55,9 +55,9 @@
     background-color:#C4C4C4;
     margin-bottom: 10px;
 }
-.form-container button{
+.form-container button {
     font-size: 18px;
-    margin-left: 338px;
+    margin-left: 437px;
     margin-top: 20px;
     color:#fff;
     background-color: #04A777;
@@ -67,27 +67,27 @@
 .form-container button:hover {
     animation: bounce 1s;
 }
-.form-container a{
+.form-container a {
     color: #8D07F6;
     text-decoration: underline;
 }
 
-.cadastro{
+.cadastro {
     display: flex;
     justify-content:flex-end;
     font-size: 23px;
     margin-top: 100px;
  
 }
-.cadastro a{
+.cadastro a {
     color: #8D07F6;
 }
-.containerFlex{
+.containerFlex {
     display: flex;
     justify-content:center;
     margin-top: 50px;
 }
-.container-rec{
+.container-rec {
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -96,24 +96,24 @@
     width:450px;
     height:400px;  
 }
-.container-formRec input{
+.container-formRec input {
     display:flex;
     background-color: #C4C4C4;
     border: none;
     border-radius:5px;
     width:300px;
 }
-@media (max-width:1240px){
+@media (max-width:1240px) {
     .img-container img{
         padding-top: 100px;
         padding-left: 50px;
         height: 300px;
         width:350px;
     }
-    .form-container input{
+    .form-container input {
         width: 400px;   
     }
-    .form-container button{
+    .form-container button {
         margin-left: 228px;   
     }
     .cadastro{
@@ -121,11 +121,11 @@
     }
 }
 
-@media (max-width:992px){
-    .form-container input{
+@media (max-width:992px) {
+    .form-container input {
         width: 250px;   
     }
-    .form-container button{
+    .form-container button {
         margin-left: 78px;  
     }
     .cadastro{
@@ -133,18 +133,18 @@
         justify-content:center;
     }
 }
-@media (max-width:777px){
-    .img-container img{
+@media (max-width:777px) {
+    .img-container img {
        padding-left: 60px;
     }
-    .form-container input{
+    .form-container input {
         width: 190px;   
         height: 18px;
     }
     .form-container{
         padding-left: 40px;
     }
-    .form-container button{  
+    .form-container button {  
         font-size: 14px; 
         margin-left:20px;
     }  
@@ -154,7 +154,7 @@
     }
 }
 
-@media (max-width:693px){
+@media (max-width:693px) {
     .img-container img{
         display:none;
     }
@@ -163,9 +163,14 @@
         margin-right: 50px;
     }
 }
-@media (max-width:320px){
+@media (max-width:320px) {
     .form-container{
         margin-left:27px;
         margin-right:80px;
     }
+}
+
+.loginButton {
+    font-family: 'poppins-ligth';
+
 }

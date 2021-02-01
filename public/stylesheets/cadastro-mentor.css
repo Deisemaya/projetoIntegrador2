@@ -9,7 +9,7 @@
     }
 }
 
-@font-face{
+@font-face {
     font-family:poppins-black;
     src: url('../fonts/Poppins-Black.ttf');
 }
@@ -24,39 +24,39 @@
     src: url('../fonts/Montserrat-Medium.ttf')
 }
 
-body{
+body {
     padding:0;
     margin:0;
 }
 
-.cadastro-container{
+.cadastro-container {
     display:flex;
     height: 100vh;
 }
 
-.img-container img{
+.img-container img {
     padding-top: 80px;
     padding-left:100px;
     height: auto;
    max-width:500px;
 }
 
-.container-right{
+.container-right {
     padding-left: 100px;
     padding-top: 80px;
 }
 
-.form-title{
+.form-title {
     color: #32264D;
     font-family: 'montserrat-medium';
 }
 
-.container-right label{
+.container-right label {
     color: #32264D;
     font-family: 'poppins-ligth';
 }
 
-.container-right input{
+.container-right input {
     display:flex;
     width: 500px;
     height: 25px;
@@ -66,7 +66,7 @@ body{
     background-color:#C4C4C4;
 }
 
-.container-right button{
+.container-right button {
     font-size: 18px;
     margin-left: 344px;
     color:#fff;
@@ -79,7 +79,7 @@ body{
     animation: bounce 1s;
 }
 
-.Login{
+.Login {
     display: flex;
     justify-content:center;
     font-size: 23px;
@@ -87,21 +87,21 @@ body{
  
 }
 
-.Login a{
+.Login a {
     color: #8D07F6;
 }
 
-button.buttonCadastrar{
+button.buttonCadastrar {
     margin: 0;
 }
 
-p.select{
+p.select {
     font-family: 'poppins-ligth';
 }
-.select select{
+.select select {
     background: #C4C4C4;;
    width: 200px;
-   padding: 5px;
+   padding: 2px;
    font-size: 14px;
    line-height: 1;
    border: 0;
@@ -109,66 +109,67 @@ p.select{
    height: 25px;
    margin-right: 0;
    border: none;
+   margin-top: 2%;
 }
 
-@media (max-width:1240px){
-    .img-container img{
+@media (max-width:1240px) {
+    .img-container img {
         padding-top: 100px;
         height: 200px;
         width:300px;
     }
-    .container-right input{
+    .container-right input {
         width: 400px;   
     }
-    .container-right button{
+    .container-right button {
         margin-left: 0px;   
     }
-    .Login{
+    .Login {
         margin-top: 70px;
     }
 }
 
-@media (max-width:940px){
-    .img-container img{
+@media (max-width:940px) {
+    .img-container img {
         padding-top: 130px;
         height: 150px;
         width:200px;
     }
-    .container-right input{
+    .container-right input {
         width: 250px;   
         height: 18px;
     }
-    .container-right button{
+    .container-right button {
         margin-left: 117px;   
     }
-    .fcontainer-right a{
+    .fcontainer-right a {
         font-size: 12px;
     }
 }
 
-@media (max-width:700px){
+@media (max-width:700px) {
     .img-container img{
        padding-left: 60px;
     }
-    .container-right input{
+    .container-right input {
         width: 190px;   
         height: 18px;
     }
-    .container-rightr{
+    .container-rightr {
         padding-left: 40px;
     }
-    .container-right button{
+    .container-right button {
         margin-left: 57px;  
         font-size: 14px; 
     }  
-    .Login{
+    .Login {
         margin-top: 50px;
         font-size: 14px;
     }
 }
 
-@media (max-width:500px){
-    .img-container img{
+@media (max-width:500px) {
+    .img-container img {
         display:none;
     }
     .container-right {
@@ -178,14 +179,18 @@ p.select{
         margin-left: 20%;
         margin-right: 20%;
     }
-    .Login{
+    .Login {
         justify-content:center;
     }
 }
 
-@media (max-width:320px){
+@media (max-width:320px) {
     .container-right{
         margin-left:27px;
         margin-right:80px;
     }
+}
+
+.label {
+    margin-bottom: 2%;
 }
