@@ -97,7 +97,10 @@ button.buttonCadastrar {
 
 p.select {
     font-family: 'poppins-ligth';
+    display: flex;
+    flex-direction: column;
 }
+
 .select select {
     background: #C4C4C4;;
    width: 200px;
