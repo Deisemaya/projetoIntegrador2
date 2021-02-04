@@ -49,6 +49,7 @@ body {
 .form-title {
     color: #32264D;
     font-family: 'montserrat-medium';
+    margin-bottom: 2%;
 }
 
 .container-right label {
@@ -99,6 +100,7 @@ p.select {
     font-family: 'poppins-ligth';
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
 }
 
 .select select {
@@ -112,7 +114,6 @@ p.select {
    height: 25px;
    margin-right: 0;
    border: none;
-   margin-top: 2%;
 }
 
 @media (max-width:1240px) {
@@ -194,6 +195,14 @@ p.select {
     }
 }
 
-.label {
+#label {
     margin-bottom: 2%;
+}
+
+.sele {
+    margin: 1px;
+}
+
+select.option-label {
+    margin-bottom: 3%;
 }

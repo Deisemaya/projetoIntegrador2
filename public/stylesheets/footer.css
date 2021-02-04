@@ -27,7 +27,7 @@ footer {
 .footer-tittle-2 {
     display: block;
     font-family: 'poppins-black';
-    font-size: 15px;
+    font-size: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-left: 25px;
@@ -36,8 +36,8 @@ footer {
 
 
 .footer-subtittle-1 a {
-    font-family: 'poppins-light';
-    font-size: 15px;
+    font-family: 'mont';
+    font-size: 10px;
     color: black;
 }
 
@@ -46,7 +46,7 @@ footer {
 }
 
 .footer-subtittle-2 {
-    font-family: 'poppins-light';
+    font-family: 'mont';
     font-size: 15px;
     color: black;
 }
