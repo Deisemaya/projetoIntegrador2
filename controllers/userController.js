@@ -1,15 +1,26 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs')
+const bcrypt = require('bcrypt');
+const { stringify } = require('querystring');
+const Sequelize = require('sequelize')
+const config = require('../config/database')
+
+const db = new Sequelize(config)
+//const result = db.query("select * from  " ,{type:Sequelize.QueryTypes.S})
 
 const usuarios = []
 
 const Users = {
         show:(req, res) => {
-          res.render('cadastro')
+          res.render('cadastro')  
       },
         
       create: (req, res) => {
           let {nome, email, senha} = req.body;
+          let senhaCrip = bcrypt.hashSync(senha, 10)
+          let usuario = stringify({nome, email, senha:senhaCrip})
+          fs.writeFileSync(usuarioJson,usuario)
           usuarios.push = ({
               nome:nome,
               email: email,
@@ -50,9 +61,20 @@ const Users = {
             res.render('login');
         },
         
-        login:(req, res) => {
+        login:async (req, res) => {
           let{email, senha} = req.body;
-          let user = usuarios.find(
+          let usuarioSalvo = fs.readFileSync(usuarioJson, {enconding:"utf-8"})
+          usuarioSalvo = JSON.parse(usuarioSalvo)
+
+          if(email != usuarioSalvo.email){
+              return res.send("Usuario  invalido")
+          }
+          if(bcrypt.compareSync(senha, usuarioSalvo.senha)){
+              return res.send('senha invalida')
+          }
+          res.redirect('perfil')
+        }
+          /*let user = usuarios.find(
               user => (user.email == email && user.senha == senha)
           );
           if (user) {req.session.user = user
@@ -60,7 +82,7 @@ const Users = {
          } else {
              return res.redirect('login');
          }
-      },
+      }*/,
       
       showCadastroMentor: (req, res) => {
         res.render('cadastro-mentor')
